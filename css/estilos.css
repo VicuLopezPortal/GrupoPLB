@@ -1,0 +1,122 @@
+body {
+  background-color: #d0d0d0;
+  font-family: "Lato", sans-serif;
+  text-align: center; }
+
+header {
+  font-family: "Lato", sans-serif;
+  background-color: #cccbcb;
+  font-size: 16px;
+  color: #040463;
+  font-weight: 400;
+  position: relative;
+  padding: 20px;
+  text-align: right; }
+  header ul {
+    color: darkblue; }
+    header ul li {
+      list-style-type: none;
+      display: inline;
+      margin-right: 15px; }
+  header .nav-link {
+    display: block;
+    padding: 0.5rem 1rem; }
+
+main {
+  font-family: "Lato", sans-serif;
+  color: #040463;
+  font-size: 16px;
+  position: relative;
+  overflow-x: hidden; }
+  main h1 {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    color: orange; }
+  main h2 {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    color: #4c99f0; }
+  main section {
+    margin: 20px;
+    display: inline-block; }
+  main div {
+    color: darkblue;
+    display: inline-block; }
+  main ul {
+    color: darkblue; }
+    main ul li {
+      list-style-type: none;
+      display: inline-flexbox;
+      padding: 1rem 1.25rem;
+      margin-right: 15px;
+      margin-bottom: 10px; }
+
+footer {
+  font-family: "Lato", sans-serif;
+  background-color: #cccbcb;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  padding: 20px;
+  text-align: right; }
+  footer p {
+    color: #040463; }
+  footer h4 {
+    color: darkblue;
+    font-size: 10px; }
+
+.contenedor {
+  text-align: center;
+  margin: 40px;
+  padding: 20px;
+  background-color: #cccbcb;
+  width: 1000px;
+  height: 500px;
+  border: 1px; }
+
+.caja {
+  text-align: center;
+  margin: 40px;
+  padding: 20px;
+  background-color: #cccbcb;
+  width: 700px;
+  height: 400px;
+  border: 1px; }
+
+@media only screen and (max-width: 599px) {
+  .contenedor {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: repeat(4, 100px);
+    grid-template-areas: "header header header" "main main" "footer footer"; }
+  .contenedor .header {
+    height: 100px;
+    width: 100%;
+    grid-area: header; }
+  .main {
+    height: 400px;
+    width: 100%;
+    grid-area: section; }
+  .footer {
+    height: 200px;
+    width: 100%;
+    grid-area: footer; } }
+
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+  .contenedor {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: repeat(4, 100px);
+    grid-template-areas: "header header header" "main section" "footer footer"; }
+  .main {
+    height: 100px;
+    width: 100%;
+    grid-area: header; }
+  .section {
+    height: 400px;
+    width: 100%;
+    grid-area: section; }
+  .footer {
+    height: 200px;
+    width: 100%;
+    grid-area: footer; } }
