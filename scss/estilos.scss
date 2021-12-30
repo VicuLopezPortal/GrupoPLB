@@ -17,18 +17,46 @@ header {
     position: relative;
     padding: 20px;
     text-align: right;
-    ul {
-        color: $color-azul;
-        li {
-            list-style-type: none;
-            display: inline;
-            margin-right: 15px;
-        }
+    width: 100%;
+    header nav {
+        width:90%;
+        max-width:1000px;
+        margin:20px auto;
+        background: $color-grisclaro;
     }
     .nav-link {
     display: block;
     padding: 0.5rem 1rem;}
+ul {
+        color: $color-azul;
+    }
+    header nav ul {
+        overflow:hidden;
+        list-style:none;
+    }
+    
+    header nav ul li {
+        float:left;
+    }
+    
+    header nav ul li a {
+        color: $color-grisclaro;
+        padding:20px;
+        display:block;
+        text-decoration:none;
+    }
+    
+    header nav ul li span {
+        margin-right:10px;
+    }
+    
+    header nav ul li a:hover {
+        background: $color-celeste;
+    }
+
 }
+
+
 
 main {
     font-family: $fuente-estilo;
